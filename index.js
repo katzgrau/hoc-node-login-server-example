@@ -61,6 +61,6 @@ server.post('/login', function (req, res, next) {
 // ports. Think of a port as a door you can knock on, which might or might not
 // open. Applications like Skype, Spotify, Chrome, all send data and receieve
 // data through these ports. Keep in mind, ports are totally conceptual  
-server.listen(3001, function () {
+server.listen(process.env.PORT || 3001, function () {
   console.log('%s listening at %s', server.name, server.url);
 });
