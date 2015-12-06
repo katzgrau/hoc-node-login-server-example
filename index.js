@@ -40,7 +40,7 @@ server.post('/login', function (req, res, next) {
     // if they did, check that the username and password matches a user
     if (usersTable[req.body.username] == req.body.password) {
       // nice, successful login, send back a message
-      res.send({success: true, message: 'Login successful'}); 
+      res.send({success: true, message: 'Login successful', username: req.body.username}); 
     } else {
       // unsuccessful login. we send back the http 422 status because it's good
       // practice (not really required) with a message
