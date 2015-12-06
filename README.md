@@ -1,4 +1,4 @@
-# Node Login Server Example
+# Hour of Code: Node Login Server Example
 
 This is just a basic webserver that accepts login requests. It is written in 
 javascript (nodejs), and uses a few third party packages. The usernames and
